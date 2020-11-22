@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submitData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/contestantOneInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center|center_horizontal"
+        tools:text="Contestant 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contestantTwoInputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Contestant 2" />
+
+    <TextView
+        android:id="@+id/c1v1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        tools:text="Variable 1"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/c1v2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Variable 2"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="@+id/c1v1Label" />
+
+    <TextView
+        android:id="@+id/c1v3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Variable 3"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+        app:layout_constraintStart_toStartOf="@+id/c1v2Label" />
+
+    <TextView
+        android:id="@+id/c2v1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Variable 1"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar4"
+        app:layout_constraintStart_toStartOf="@+id/c1v3Label" />
+
+    <TextView
+        android:id="@+id/c2v2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Variable 2"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar5"
+        app:layout_constraintStart_toStartOf="@+id/c2v1Label" />
+
+    <TextView
+        android:id="@+id/c2v3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Variable 3"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar6"
+        app:layout_constraintStart_toStartOf="@+id/c2v2Label" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="24dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toEndOf="@+id/c1v1Label"
+        app:layout_constraintTop_toBottomOf="@+id/contestantOneInputLabel" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="@+id/seekBar1"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar1" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="@+id/seekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="@+id/seekBar3"
+        app:layout_constraintTop_toBottomOf="@+id/contestantTwoInputLabel" />
+
+    <SeekBar
+        android:id="@+id/seekBar5"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="@+id/seekBar4"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar4" />
+
+    <SeekBar
+        android:id="@+id/seekBar6"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="@+id/seekBar5"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
+
+    <Button
+        android:id="@+id/determineWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/determineWinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

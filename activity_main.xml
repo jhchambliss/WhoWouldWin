@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="9dp"
+    tools:layout_editor_absoluteY="34dp">
+
+    <TextView
+        android:id="@+id/variableOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/variableOneTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/variableOneTextBox"
+        app:layout_constraintStart_toStartOf="@+id/contestantOneTextView" />
+
+    <TextView
+        android:id="@+id/variableTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/variableTwoTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/variableTwoTextBox"
+        app:layout_constraintStart_toStartOf="@+id/variableOneTextView" />
+
+    <TextView
+        android:id="@+id/setContestantsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="585dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/setContestantsTextView"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/setVariablesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="347dp"
+        android:gravity="center"
+        android:text="@string/setVariablesTextView"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/contestantOneTextBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/contestantOneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/setContestantsTextView" />
+
+    <EditText
+        android:id="@+id/contestantTwoTextBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/contestantOneTextBox"
+        app:layout_constraintTop_toBottomOf="@+id/contestantOneTextBox" />
+
+    <EditText
+        android:id="@+id/variableOneTextBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/contestantTwoTextBox"
+        app:layout_constraintTop_toBottomOf="@+id/setVariablesTextView" />
+
+    <EditText
+        android:id="@+id/variableTwoTextBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/variableOneTextBox"
+        app:layout_constraintTop_toBottomOf="@+id/variableOneTextBox" />
+
+    <EditText
+        android:id="@+id/variableThreeTextBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/variableTwoTextBox"
+        app:layout_constraintTop_toBottomOf="@+id/variableTwoTextBox" />
+
+    <TextView
+        android:id="@+id/variableThreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/variableThreeTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/variableThreeTextBox"
+        app:layout_constraintStart_toStartOf="@+id/variableTwoTextView" />
+
+    <TextView
+        android:id="@+id/contestantOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Contestant 1:"
+        app:layout_constraintBottom_toBottomOf="@+id/contestantOneTextBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contestantTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Contestant 2:"
+        app:layout_constraintBottom_toBottomOf="@+id/contestantTwoTextBox"
+        app:layout_constraintStart_toStartOf="@+id/contestantOneTextView" />
+
+    <Button
+        android:id="@+id/submitNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="452dp"
+        android:text="@string/submitVariables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
