@@ -9,11 +9,14 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
-public class Second extends AppCompatActivity {
+public class  Second extends AppCompatActivity {
 
     private SeekBar seekBar1, seekBar2, seekBar3, seekBar4, seekBar5, seekBar6;
     private String winner;
+    private int most, least;
+    private int c1v1, c1v2, c1v3, c2v1, c2v2, c2v3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,8 @@ public class Second extends AppCompatActivity {
         String variable1 = bundle.getString("v1Name");
         String variable2 = bundle.getString("v2Name");
         String variable3 = bundle.getString("v3Name");
+        most = bundle.getInt("most");
+        least = bundle.getInt("least");
 
         // Set contestant names
         c1Label.setText(name1);
@@ -63,17 +68,17 @@ public class Second extends AppCompatActivity {
             public void onClick(View v) {
 
                 // get data for contestant 1
-                int c1v1 = seekBar1.getProgress();
-                int c1v2 = seekBar2.getProgress();
-                int c1v3 = seekBar3.getProgress();
+                c1v1 = seekBar1.getProgress();
+                c1v2 = seekBar2.getProgress();
+                c1v3 = seekBar3.getProgress();
 
                 // get data for contestant 2
-                int c2v1 = seekBar4.getProgress();
-                int c2v2 = seekBar5.getProgress();
-                int c2v3 = seekBar6.getProgress();
+                c2v1 = seekBar4.getProgress();
+                c2v2 = seekBar5.getProgress();
+                c2v3 = seekBar6.getProgress();
 
-                int c1Total = c1v1 + c1v2 + c1v3;
-                int c2Total = c2v1 + c2v2 + c2v3;
+                double c1Total = weighted(c1v1, c1v2, c1v3);
+                double c2Total = weighted(c2v1, c2v2, c2v3);
 
                 if (c1Total > c2Total) {
                     winner = name1;
@@ -88,5 +93,46 @@ public class Second extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public double weighted(int a, int b, int c) {
+
+        double x = a;
+        double y = b;
+        double z = c;
+
+        // switch statement to apply weight for most important variable
+        switch (most) {
+            case 0:
+                x = a * 1.25;
+                break;
+            case 1:
+                y = b * 1.25;
+                break;
+            case 2:
+                z = c * 1.25;
+                break;
+            case 3:
+                break;
+        }
+
+        // switch statement to reduce weight for least important variable
+        switch (least) {
+            case 0:
+                x = a * .8;
+                break;
+            case 1:
+                y = b * .8;
+                break;
+            case 2:
+                z = c * .8;
+                break;
+            case 3:
+                break;
+        }
+
+        // return the total score
+        return (x + y + z);
+
     }
 }

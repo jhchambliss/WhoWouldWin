@@ -15,25 +15,42 @@
     <string name="rankTextView">Would you like to rank your variables?</string>
     <string name="yesCheckBox">Yes</string>
     <string-array name="mostImportantArray">
-        <item>none</item>
         <item>variable 1</item>
         <item>variable 2</item>
         <item>variable 3</item>
     </string-array>
     <string-array name="leastImportantArray">
-        <item>none</item>
         <item>variable 1</item>
         <item>variable 2</item>
         <item>variable 3</item>
     </string-array>
     <string name="splashTitle">Who Would Win</string>
-    <string name="menu_about">How to Play</string>
-    <string name="about">
-        1. Enter the names of two people or things that you are deciding between or that are in competition with one another. \n
-        2. Enter three variables on which you will rank these contestants. \n
-        3. Determine whether or not any of the variables is more important than other variables or if they are all equally meaningful. \n
-        4. Press submit to go to the ranking screen. \n
-        5. Rank each contestant on a scale of 1 to 10 for each variable. (NOTE: Scoring higher means being better, so if having less of something is preferred, score that higher. Example, if having a lower cost is desired, a cheaper price would score higher.) \n
+    <string name="menu_about">About</string>
+    <string name="how_to_play">
+        1. Enter the names of two people or things that you are deciding between or that are in
+        competition with one another. \n\n
+        2. Enter three variables on which you will rank these contestants. \n\n
+        3. Determine whether or not any of the variables is more important than other variables or
+        if they are all equally meaningful. \n\n
+        4. Press submit to go to the ranking screen. \n\n
+        5. Rank each contestant on a scale of 1 to 10 for each variable. (NOTE: Scoring higher means
+        being better, so if having less of something is preferred, score that higher. Example, if
+        having a lower cost is desired, a cheaper price would score higher.) \n\n
         6. Press submit to find out who/what won based on your input.
+    </string>
+    <string name="superman">Superman</string>
+    <string name="batman">Batman</string>
+    <string name="can_fly">can fly</string>
+    <string name="has_cool_gadgets">has cool gadgets</string>
+    <string name="can_defeat_thanos">can defeat Thanos</string>
+    <string name="who_would_win_logo_of_a_boxer">Who Would Win logo of a boxer</string>
+    <string name="menu_how_to_play">How To Play</string>
+    <string name="about">
+        This app was developed because making decisions can be hard. \n\n
+        It was initially conceived of as a means of deciding which employee would be better for a
+        specific sales opportunity. \n\n
+        Technically any two things can compete against each other. What makes a better pet — a rock
+        or a taco? Which Golden Girl is really the best? Should you order pizza or ramen for dinner?
+        Who knows? Well … now you can.
     </string>
 </resources>

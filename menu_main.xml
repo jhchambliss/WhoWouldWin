@@ -5,4 +5,7 @@
         android:title="@string/menu_about"
         android:icon="@drawable/ic_about"
         app:showAsAction="never" />
+    <item android:id="@+id/menu_how_to_play"
+        android:title="@string/menu_how_to_play"
+        app:showAsAction="never" />
 </menu>

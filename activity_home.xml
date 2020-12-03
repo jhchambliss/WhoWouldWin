@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/boxer_image" />
+        app:srcCompat="@drawable/boxer_image"
+        android:contentDescription="@string/who_would_win_logo_of_a_boxer" />
 
     <TextView
         android:id="@+id/textView3"
