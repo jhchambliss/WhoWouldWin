@@ -12,8 +12,6 @@ import android.view.View.OnClickListener;
 
 public class Second extends AppCompatActivity {
 
-    private TextView c1Label, c2Label, c1v1Label, c1v2Label, c1v3Label, c2v1Label, c2v2Label, c2v3Label;
-    private Button determineWinner;
     private SeekBar seekBar1, seekBar2, seekBar3, seekBar4, seekBar5, seekBar6;
     private String winner;
 
@@ -23,21 +21,21 @@ public class Second extends AppCompatActivity {
         setContentView(R.layout.variable_input);
 
         // define variables for widgets
-        c1Label = (TextView) findViewById(R.id.contestantOneInputLabel);
-        c2Label = (TextView) findViewById(R.id.contestantTwoInputLabel);
-        c1v1Label = (TextView) findViewById(R.id.c1v1Label);
-        c1v2Label = (TextView) findViewById(R.id.c1v2Label);
-        c1v3Label = (TextView) findViewById(R.id.c1v3Label);
-        c2v1Label = (TextView) findViewById(R.id.c2v1Label);
-        c2v2Label = (TextView) findViewById(R.id.c2v2Label);
-        c2v3Label = (TextView) findViewById(R.id.c2v3Label);
-        determineWinner = (Button) findViewById(R.id.determineWinner);
-        seekBar1 = (SeekBar) findViewById(R.id.seekBar1);
-        seekBar2 = (SeekBar) findViewById(R.id.seekBar2);
-        seekBar3 = (SeekBar) findViewById(R.id.seekBar3);
-        seekBar4 = (SeekBar) findViewById(R.id.seekBar4);
-        seekBar5 = (SeekBar) findViewById(R.id.seekBar5);
-        seekBar6 = (SeekBar) findViewById(R.id.seekBar6);
+        TextView c1Label = findViewById(R.id.contestantOneInputLabel);
+        TextView c2Label = findViewById(R.id.contestantTwoInputLabel);
+        TextView c1v1Label = findViewById(R.id.c1v1Label);
+        TextView c1v2Label = findViewById(R.id.c1v2Label);
+        TextView c1v3Label = findViewById(R.id.c1v3Label);
+        TextView c2v1Label = findViewById(R.id.c2v1Label);
+        TextView c2v2Label = findViewById(R.id.c2v2Label);
+        TextView c2v3Label = findViewById(R.id.c2v3Label);
+        Button determineWinner = findViewById(R.id.determineWinner);
+        seekBar1 = findViewById(R.id.seekBar1);
+        seekBar2 = findViewById(R.id.seekBar2);
+        seekBar3 = findViewById(R.id.seekBar3);
+        seekBar4 = findViewById(R.id.seekBar4);
+        seekBar5 = findViewById(R.id.seekBar5);
+        seekBar6 = findViewById(R.id.seekBar6);
 
         // get data from intent
         Bundle bundle = getIntent().getExtras();

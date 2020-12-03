@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="9dp"
     tools:layout_editor_absoluteY="34dp">
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/variableOneTextView"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/variableOneTextBox"
         app:layout_constraintStart_toStartOf="@+id/contestantOneTextView" />
 
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/variableTwoTextView"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/variableTwoTextBox"
         app:layout_constraintStart_toStartOf="@+id/variableOneTextView" />
 
@@ -34,6 +37,7 @@
         android:layout_marginBottom="585dp"
         android:gravity="center|center_horizontal"
         android:text="@string/setContestantsTextView"
+        android:textColor="@android:color/background_light"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +55,7 @@
         android:layout_marginBottom="347dp"
         android:gravity="center"
         android:text="@string/setVariablesTextView"
+        android:textColor="@android:color/background_light"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,6 +73,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/contestantOneTextView"
         app:layout_constraintTop_toBottomOf="@+id/setContestantsTextView" />
@@ -79,6 +85,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/contestantOneTextBox"
         app:layout_constraintTop_toBottomOf="@+id/contestantOneTextBox" />
@@ -90,6 +97,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/contestantTwoTextBox"
         app:layout_constraintTop_toBottomOf="@+id/setVariablesTextView" />
@@ -101,6 +109,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/variableOneTextBox"
         app:layout_constraintTop_toBottomOf="@+id/variableOneTextBox" />
@@ -112,6 +121,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/variableTwoTextBox"
         app:layout_constraintTop_toBottomOf="@+id/variableTwoTextBox" />
@@ -122,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/variableThreeTextView"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/variableThreeTextBox"
         app:layout_constraintStart_toStartOf="@+id/variableTwoTextView" />
 
@@ -133,6 +144,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="8dp"
         android:text="Contestant 1:"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/contestantOneTextBox"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -142,6 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Contestant 2:"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/contestantTwoTextBox"
         app:layout_constraintStart_toStartOf="@+id/contestantOneTextView" />
 
@@ -149,39 +162,48 @@
         android:id="@+id/submitNames"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="572dp"
         android:text="@string/submitVariables"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/mostImportantSpinner"
         android:layout_width="144dp"
         android:layout_height="38dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorAccent"
+        android:entries="@array/mostImportantArray"
+        android:popupBackground="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/leastImportantSpinner"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/leastImportantSpinner"
         android:layout_width="144dp"
         android:layout_height="38dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/spinner"
+        android:background="@color/colorAccent"
+        android:entries="@array/leastImportantArray"
+        android:popupBackground="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/mostImportantSpinner"
         app:layout_constraintTop_toBottomOf="@+id/leastImportantTextView" />
 
     <TextView
         android:id="@+id/mostImportantTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:text="@string/mostImportantTextView"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/leastImportantTextView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -189,11 +211,35 @@
         android:id="@+id/leastImportantTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="24dp"
         android:text="@string/leastImportantTextView"
+        android:textColor="@android:color/background_light"
         app:layout_constraintStart_toEndOf="@+id/mostImportantTextView"
+        app:layout_constraintTop_toBottomOf="@+id/yesCheckBox" />
+
+    <TextView
+        android:id="@+id/rankTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/rankTextView"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/yesCheckBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/yesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/yesCheckBox"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/rankTextView"
         app:layout_constraintTop_toBottomOf="@+id/variableThreeTextBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

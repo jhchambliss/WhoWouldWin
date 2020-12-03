@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Who Would Win</string>
+    <string name="setContestantsTextView">Set Contestants</string>
+    <string name="contestantOneTextView">Contestant 1:</string>
+    <string name="contestantTwoTextView">Contestant 2:</string>
+    <string name="setVariablesTextView">Set Variables</string>
+    <string name="variableOneTextView">Variable 1:</string>
+    <string name="variableTwoTextView">Variable 2:</string>
+    <string name="variableThreeTextView">Variable 3:</string>
+    <string name="submitVariables">Submit Variables</string>
+    <string name="determineWinner">Determine Winner</string>
+    <string name="winnerAnnouncementTextView">And the WINNER is ....</string>
+    <string name="mostImportantTextView">Most Important</string>
+    <string name="leastImportantTextView">Least Important</string>
+    <string name="rankTextView">Would you like to rank your variables?</string>
+    <string name="yesCheckBox">Yes</string>
+    <string-array name="mostImportantArray">
+        <item>none</item>
+        <item>variable 1</item>
+        <item>variable 2</item>
+        <item>variable 3</item>
+    </string-array>
+    <string-array name="leastImportantArray">
+        <item>none</item>
+        <item>variable 1</item>
+        <item>variable 2</item>
+        <item>variable 3</item>
+    </string-array>
+    <string name="splashTitle">Who Would Win</string>
+    <string name="menu_about">How to Play</string>
+    <string name="about">
+        1. Enter the names of two people or things that you are deciding between or that are in competition with one another. \n
+        2. Enter three variables on which you will rank these contestants. \n
+        3. Determine whether or not any of the variables is more important than other variables or if they are all equally meaningful. \n
+        4. Press submit to go to the ranking screen. \n
+        5. Rank each contestant on a scale of 1 to 10 for each variable. (NOTE: Scoring higher means being better, so if having less of something is preferred, score that higher. Example, if having a lower cost is desired, a cheaper price would score higher.) \n
+        6. Press submit to find out who/what won based on your input.
+    </string>
+</resources>
